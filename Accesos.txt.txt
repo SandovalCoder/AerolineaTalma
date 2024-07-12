@@ -1,0 +1,7 @@
+Administrador:
+Usuario: Admin	
+Contraseña: E1234
+
+Empleado:
+Usuario:Rafa123
+Contraseña:1234

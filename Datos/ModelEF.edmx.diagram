@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="915e397298934ee3948dfb52c8e8dc34" Name="Diagram1">
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Avion" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Avion_Equipaje" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.EmpleadoTalma" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Equipaje" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Equipo_ServicioLimpieza" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Equipo_ServicioRampa" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Pasajero" Width="1.5" PointX="1.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.PuertaEmbarque" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.ServiciosTalma_Vuelo" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Vuelo" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Vuelo_PuertaEmbarque" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalmaAerolineaModel.Vuelos_Pasajeros" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="TalmaAerolineaModel.AvionEquipaje_Avion" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Vuelo_AvionContratista" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.AvionEquipaje_Equipaje" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.EquipoLimpieza_EmpleadoTalma" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.ServicioRampa_EmpleadoTalma" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Equipaje_Pasajero" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Table_24_Equipo_ServicioLimpieza" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Table_24_Equipo_ServicioRampa" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Tripulacion_Pasajero" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Vuelo_PuertaEmbarque_PuertaEmbarque" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.ServiciosTalma_Vuelo_Vuelo" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Tripulacion_Vuelo" ManuallyRouted="false" />
+        <AssociationConnector Association="TalmaAerolineaModel.Vuelo_PuertaEmbarque_Vuelo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

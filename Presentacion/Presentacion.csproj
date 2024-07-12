@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{804AD868-CCD1-4E12-A612-FA6B7DB688B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAvion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAvion.Designer.cs">
+      <DependentUpon>FrmAvion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAvionEquipaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAvionEquipaje.Designer.cs">
+      <DependentUpon>FrmAvionEquipaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleado.Designer.cs">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEquipaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquipaje.Designer.cs">
+      <DependentUpon>FrmEquipaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEquipoDeLimpieza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquipoDeLimpieza.Designer.cs">
+      <DependentUpon>FrmEquipoDeLimpieza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEquipoDeRampa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquipoDeRampa.Designer.cs">
+      <DependentUpon>FrmEquipoDeRampa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPasajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPasajero.Designer.cs">
+      <DependentUpon>FrmPasajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipalEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipalEmpleado.Designer.cs">
+      <DependentUpon>FrmPrincipalEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPuertaEmbarque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPuertaEmbarque.Designer.cs">
+      <DependentUpon>FrmPuertaEmbarque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRAsignacionPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRAsignacionPersonal.Designer.cs">
+      <DependentUpon>FrmRAsignacionPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporte.Designer.cs">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRLimpiezaCabina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRLimpiezaCabina.Designer.cs">
+      <DependentUpon>FrmRLimpiezaCabina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRSeguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRSeguimiento.Designer.cs">
+      <DependentUpon>FrmRSeguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServicioTalmaVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicioTalmaVuelo.Designer.cs">
+      <DependentUpon>FrmServicioTalmaVuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVuelo.Designer.cs">
+      <DependentUpon>FrmVuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVueloPasajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVueloPasajero.Designer.cs">
+      <DependentUpon>FrmVueloPasajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVueloPuertoEmbarque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVueloPuertoEmbarque.Designer.cs">
+      <DependentUpon>FrmVueloPuertoEmbarque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAvion.resx">
+      <DependentUpon>FrmAvion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAvionEquipaje.resx">
+      <DependentUpon>FrmAvionEquipaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleado.resx">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquipaje.resx">
+      <DependentUpon>FrmEquipaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquipoDeLimpieza.resx">
+      <DependentUpon>FrmEquipoDeLimpieza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEquipoDeRampa.resx">
+      <DependentUpon>FrmEquipoDeRampa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPasajero.resx">
+      <DependentUpon>FrmPasajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipalEmpleado.resx">
+      <DependentUpon>FrmPrincipalEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPuertaEmbarque.resx">
+      <DependentUpon>FrmPuertaEmbarque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRAsignacionPersonal.resx">
+      <DependentUpon>FrmRAsignacionPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporte.resx">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRLimpiezaCabina.resx">
+      <DependentUpon>FrmRLimpiezaCabina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRSeguimiento.resx">
+      <DependentUpon>FrmRSeguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicioTalmaVuelo.resx">
+      <DependentUpon>FrmServicioTalmaVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVuelo.resx">
+      <DependentUpon>FrmVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVueloPasajero.resx">
+      <DependentUpon>FrmVueloPasajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVueloPuertoEmbarque.resx">
+      <DependentUpon>FrmVueloPuertoEmbarque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{1a2b7965-1083-40b9-aee2-3dfa433d090d}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{0c791610-40bb-4d2c-b955-796ee0bc3768}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
